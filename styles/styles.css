@@ -11,25 +11,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
 nav {
     background-color: var(--colors1);
     padding: 10px;
+    color: #ffffff;
 }
 nav a {
     color: white;
     display: block;
-    padding: 10px;;
+    padding: 10px;
 }
-h1 {color: var(--colors1);}
+h1 {
+    color: var(--colors1);
+    background-color: #ffffff;
+}
 img {
-    width: var(--width);
+    width: var(--width, 150px);
     height: auto;
-    border: var(--border);
-    padding: var(--padding);
-    box-shadow: var(--box-shadow);
+    border: var(--border, 1px solid #000);
+    padding: var(--padding, 2px);
+    box-shadow: var(--box-shadow, 0 0 30px gray);
 }
-p {padding: 0;}
-main {max-width: 840px;}
+p {
+    padding: 0;
+}
+main {
+    max-width: 840px;
+    margin: auto;
+}
 aside {
     width: 20em;
     text-align: var(--text-align);
@@ -42,14 +56,10 @@ aside img{
 aside h2{
     position: absolute;
     top: 55px;
-    left: 107px;;
+    left: 107px;
 }
 main img{
-    width: var(--width);
-    height: auto;
     border: 1px solid steelblue;
-    padding: var(--padding);
-    box-shadow: var(--box-shadow);
     float: right;
 }
 footer{
@@ -60,7 +70,7 @@ footer{
 /* Class Selectors */
 .box{
     margin: 1rem;
-    border: 1px solid rgba(0,0,0,10%);
+    border: 1px solid rgba(0,0,0,0.1);
     padding: 1rem;
     background-color: #ddd;
     color: #000;

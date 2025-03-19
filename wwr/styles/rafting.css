@@ -1,16 +1,17 @@
 :root{
     --primary-color: #0077be;
     --secondary-color: #228b22;
-    --acent1-color: #ff8c00;
-    --acent2-color: #ffffff;;
+    --accent1-color: #ff8c00;
+    --accent2-color: #ffffff;
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: Roboto Slab;
+    font-family: 'Roboto Slab', serif;
     color: var(--primary-color);
+    background-color: #ffffff;
 }
 p{
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 }
 .footer-linked-images{
     text-decoration: none;
@@ -26,7 +27,6 @@ p{
     position: absolute;
     top: 0%;
     margin: 30px;
-    width: auto;
     width: 100%;
     font-size: 3rem;
     background-color: rgba(0, 0, 0, 0.3);
@@ -37,11 +37,13 @@ p{
 }
 .hero article{
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.3);
-    top: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 35%;
+    padding: 10px;
     margin: 20px auto;
     color: #ffffff;
     width: 90%;
+    border-radius: 10px;
 }
 .background-image{
     display: block;
@@ -62,4 +64,5 @@ p{
     display: block;
     margin:  20px auto ;
     border: 4px solid var(--acent1-color);
+    max-width: 90%;
 }
