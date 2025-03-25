@@ -64,5 +64,144 @@ p{
     display: block;
     margin:  20px auto ;
     border: 4px solid var(--accent1-color);
-    max-width: 90%;
+    width: 100%;
+
+}
+.grid_container{
+    display: grid;
+    grid-template-columns:1fr 4fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+.grid_logo{
+    grid-column: 1/2;
+}
+.grid_item1{
+    grid-column: 2/3;
+    width: 100%;
+    height: 50%;
+    background-color: var(--accent1-color);
+    box-sizing: border-box;
+    padding: 10px;
+}
+.grid_item2{
+    grid-column: 3/4;
+
+}
+.grid_item3{
+    grid-column: 4/5;
+
+}
+.grid_item4{
+    grid-column: 4/6;
+
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+
+}
+nav a{
+    width: 100%;
+    background-color: var(--accent1-color);
+    box-sizing: border-box;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #ffffff;
+    border: 3px solid #000;
+    text-align: center;
+    font-weight: bold;
+}
+
+.history-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-gap: 30px;
+    align-items: center;
+    padding: 40px 20px;
+}
+.history-section h2{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.history-section p:first-of-type {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: left;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    margin: 30px;
+}
+.history-section img {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width:  100%;
+    max-width: 400px;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    border: 4px solid var(--accent1-color);
+}
+.history-section p:last-of-type {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: right;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    margin: 30px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #000;
+    text-align: center;
+}
+footer p {
+    flex-grow: 1;
+}
+
+.footer-links {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+figcaption{
+    text-align: center;
+}
+.adventure_awaits_you{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+}
+.adventure_awaits_you h2{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.adventure_awaits_you figure img{
+    border-radius: 10px;
+}
+.adventure_awaits_you figure:nth-child(2),
+.adventure_awaits_you figure:nth-child(3),
+.adventure_awaits_you figure:nth-child(4){
+    grid-row: 2;
+}
+.adventure_awaits_you figure:nth-child(5) {
+    grid-column: 1/ 2;
+    grid-row: 3;
+}
+
+.adventure_awaits_you figure:nth-child(6) {
+    grid-column: 3 / 4;
+    grid-row: 3;
 }
