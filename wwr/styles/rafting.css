@@ -299,3 +299,11 @@ button{
     border-radius: 3px;
     font-weight: bold;
 }
+.message-title{
+    font-family:'Montserrat', Arial, sans-serif;
+    color: #000;
+    font-weight: 400;
+}
+label[for^="message"]{
+    font-size: .9em;
+}
