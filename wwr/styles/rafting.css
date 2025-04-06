@@ -60,6 +60,7 @@ p{
 }
 .hero-text p{
     color: inherit;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 .background-image{
     display: block;
@@ -325,7 +326,7 @@ label[for^="messagep"]{
 
 .cta-button {
     padding: 10px 20px;
-    background-color: var(--secondary-color);
+    background-color: #023a0e;
     color: white;
     text-decoration: none;
     border-radius: 5px;
